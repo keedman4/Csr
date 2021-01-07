@@ -1,0 +1,19 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "csr-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/csr/CsrWebPart.js",
+          "manifest": "./src/webparts/csr/CsrWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "CsrWebPartStrings": "lib/webparts/csr/loc/{locale}.js",
+    "PropertyControlStrings": "node_modules/@pnp/spfx-property-controls/lib/loc/{locale}.js"
+  }
+}
